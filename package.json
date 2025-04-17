@@ -1,0 +1,60 @@
+{
+  "name": "fastify-clean-kit",
+  "version": "1.0.0",
+  "description": "Fastify Clean Kit",
+  "keywords": [
+    "fastify",
+    "clean-architecture",
+    "typescript",
+    "starter-kit",
+    "backend",
+    "nodejs",
+    "rest-api",
+    "mongodb"
+  ],
+  "homepage": "https://github.com/aquie00t/fasitfy-clean-kit#readme",
+  "bugs": {
+    "url": "https://github.com/aquie00t/fasitfy-clean-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aquie00t/fasitfy-clean-kit.git"
+  },
+  "license": "MIT",
+  "author": "İrfan Sönmezışıklı",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node ./dist/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.{ts,js,json,md}": [
+      "prettier --write --ignore-unknown"
+    ],
+    "**/*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "nodemon": "^3.1.9",
+    "prettier": "3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.30.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}

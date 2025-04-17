@@ -1,0 +1,15 @@
+# Node Modules Directory
+node_modules/
+
+# Build Directory
+dist/
+
+# VSCode Settings (except launch.json and tasks.json)
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Environment Variables Files
+.env.development
+.env.test
+.env.production
